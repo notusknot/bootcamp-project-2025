@@ -1,1 +1,5 @@
 /node_modules
+flake.nix
+flake.lock
+.envrc
+.direnv
