@@ -1,0 +1,169 @@
+/* Full page defaults */
+
+:root {
+	--text: #d9e0ee;
+	--bg: #303241;
+	--bg-mid: #292a37;
+	--red: #ec6a88;
+	--green: #3fdaa4;
+	--blue: #3fc6de;
+}
+
+@font-face {
+  font-family: "JBM";
+  src:
+    local("JetBrains Mono"),
+    url("fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"),
+    url("fonts/variable/JetBrainsMono[wght].ttf") format("ttf");
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "JBM", "JetBrains Mono", liberation mono, monospace;
+  line-height: calc(1em + 0.5rem);
+  background-color: var(--bg-mid);
+  overscroll-behavior-y: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Default element styles */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding-bottom: none;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--green);
+  text-decoration: underline
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  color: var(--text);
+  opacity: 35%;
+}
+
+/* Page elements */
+
+main {
+  padding: 2rem;
+  max-width: calc(60ch + 4rem);
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav, footer {
+  background-color: var(--bg-mid);
+  height: 2.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--text);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+  padding: none !important;
+  margin: none !important;
+}
+
+nav a {
+  text-wrap: nowrap;
+  margin: 0 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+}
+
+form {
+  background-color: var(--bg-mid);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  color: var(--green);
+}
+
+form input, textarea {
+  font-size: 0,9rem;
+  background-color: var(--bg);
+  border: 1px solid var(--bg-mid);
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  color: var(--text);
+  font-family: inherit;
+}
+
+form input:focus, textarea:focus{
+  outline: none;
+  outline: 2px solid var(--blue);
+}
+
+form input:hover, textarea:hover {
+  opacity: 80%;
+}
+
+.blog, .resume, .project {
+  width: 100%;
+}
