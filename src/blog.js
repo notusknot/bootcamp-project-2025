@@ -1,34 +1,29 @@
 var blogContainer = document.getElementById('blog-container');
 var Blogs = [
     {
-        title: "A cool post",
-        date: "7/28/2025 - 8/30/2025",
+        title: "Post 1",
+        date: "2025",
         description: "Description of said post",
         image: "./avila.webp",
         imageAlt: "Description of image",
         slug: "post-1",
     },
     {
-        title: "A cool post",
-        date: "7/28/2025 - 8/30/2025",
+        title: "Post 2",
+        date: "2025",
         description: "Description of said post",
         image: "./avila.webp",
         imageAlt: "Description of image",
         slug: "post-2",
     },
-    {
-        title: "A cool post",
-        date: "7/28/2025 - 8/30/2025",
-        description: "Description of said post",
-        image: "./avila.webp",
-        imageAlt: "Description of image",
-        slug: "post-3",
-    },
 ];
 Blogs.forEach(function (blog) {
     var postContainer = document.createElement("section");
     var title = document.createElement("h2");
-    title.textContent = blog.title;
+    var title_link = document.createElement("a");
+    title_link.textContent = blog.title;
+    title_link.href = "../blogs/".concat(blog.slug, ".html");
+    title.appendChild(title_link);
     var image = document.createElement("img");
     image.src = blog.image;
     image.alt = blog.imageAlt;

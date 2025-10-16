@@ -11,7 +11,7 @@ const blogContainer = document.getElementById('blog-container');
 
 const Blogs: Blog[] = [
   {
-    title: "A cool post",
+    title: "Post 1",
     date: "2025",
     description:
       "Description of said post",
@@ -20,7 +20,7 @@ const Blogs: Blog[] = [
     slug: "post-1",
   },
   {
-    title: "A cool post",
+    title: "Post 2",
     date: "2025",
     description:
       "Description of said post",
@@ -28,22 +28,16 @@ const Blogs: Blog[] = [
     imageAlt: "Description of image",
     slug: "post-2",
   },
-  {
-    title: "A cool post",
-    date: "2025",
-    description:
-      "Description of said post",
-    image: "./avila.webp",
-    imageAlt: "Description of image",
-    slug: "post-3",
-  },
 ];
 
 Blogs.forEach((blog) => {
   const postContainer = document.createElement("section")
 
   const title = document.createElement("h2")
-  title.textContent = blog.title
+  const title_link = document.createElement("a")
+  title_link.textContent = blog.title
+  title_link.href = `../blogs/${blog.slug}.html`
+  title.appendChild(title_link)
 
   const image = document.createElement("img");
   image.src = blog.image;
