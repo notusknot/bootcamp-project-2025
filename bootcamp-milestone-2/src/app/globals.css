@@ -1,6 +1,18 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--text: #d9e0ee;
+	--bg: #303241;
+	--bg-mid: #292a37;
+	--red: #ec6a88;
+	--green: #3fdaa4;
+	--blue: #3fc6de;
+}
+
+@font-face {
+  font-family: "JBM";
+  src:
+    local("JetBrains Mono"),
+    url("fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"),
+    url("fonts/variable/JetBrainsMono[wght].ttf") format("ttf");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +29,15 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-family: "JBM", "JetBrains Mono", liberation mono, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 * {
@@ -30,9 +46,36 @@ body {
   margin: 0;
 }
 
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding-bottom: none;
+}
+
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--green);
+  text-decoration: underline
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  color: var(--text);
+  opacity: 35%;
 }
 
 @media (prefers-color-scheme: dark) {

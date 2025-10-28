@@ -1,0 +1,33 @@
+.nav  {
+  background-color: var(--bg-mid);
+  height: 2.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--text);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+  padding: none !important;
+  margin: none !important;
+}
+
+.navLink {
+  text-wrap: nowrap;
+  margin: 0 0.5rem;
+}
