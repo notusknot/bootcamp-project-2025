@@ -14,6 +14,7 @@ export default function BlogPreview(props: Blog) {
         <p>{props.description}</p>
 				<p>{props.date}</p>
       </div>
+      <hr />
 	  </div>
   );
 }
