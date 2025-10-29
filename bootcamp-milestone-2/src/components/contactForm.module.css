@@ -1,0 +1,33 @@
+.contactForm {
+  background-color: var(--bg-mid);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formLabel {
+  font-weight: bold;
+  color: var(--green);
+}
+
+.formInput, .textarea {
+  font-size: 0,9rem;
+  background-color: var(--bg);
+  border: 1px solid var(--bg-mid);
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  color: var(--text);
+  font-family: inherit;
+}
+
+.formInput:focus, .textarea:focus{
+  outline: none;
+  outline: 2px solid var(--blue);
+}
+
+.formInput:hover, .textarea:hover {
+  opacity: 80%;
+}
