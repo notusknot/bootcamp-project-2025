@@ -9,15 +9,14 @@ export default function Navbar() {
     // NOTE: we use "class" in HTML but React is quirky so we have to 
     // change all the "class" to "className"
     <header className={style.header}>
-      <h1> Gabe's Awesome Website </h1>
-      <nav className="nav">
-        <a href="index.html" >Gabriel Thompson</a>
-        <ul className="nav-list">
-          <li><Link className="navLink" href="/">Home</Link></li>
-          <li><Link className="navLink"href="/blog">Blog</Link></li>
-          <li><Link className="navLink"href="/portfolio">Portfolio</Link></li>
-          <li><Link className="navLink"href="/resume">Resume</Link></li>
-          <li><Link className="navLink"href="/contact">Contact</Link></li>
+      <nav className={style.nav}>
+        <Link className={style.navLink} href="/" >Gabriel Thompson</Link>
+        <ul className={style.navList}>
+          <li><Link className={style.navLink} href="/">Home</Link></li>
+          <li><Link className={style.navLink} href="/blog">Blog</Link></li>
+          <li><Link className={style.navLink} href="/portfolio">Portfolio</Link></li>
+          <li><Link className={style.navLink} href="/resume">Resume</Link></li>
+          <li><Link className={style.navLink} href="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>

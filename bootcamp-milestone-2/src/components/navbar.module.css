@@ -1,3 +1,7 @@
+.header {
+  width: 100%;
+}
+
 .nav  {
   background-color: var(--bg-mid);
   height: 2.5rem;
@@ -19,7 +23,7 @@
   overflow-y: hidden;
 }
 
-.nav-list {
+.navList {
   display: flex;
   list-style: none;
   margin-left: 0px;

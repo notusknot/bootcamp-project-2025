@@ -13,7 +13,7 @@ const blogs: Blog[] = [
     date: "2025",
     description:
       "Description of said post",
-    image: "./avila.webp",
+    image: "/avila.webp",
     imageAlt: "Description of image",
     slug: "post-1",
   },
@@ -22,7 +22,7 @@ const blogs: Blog[] = [
     date: "2025",
     description:
       "Description of said post",
-    image: "./avila.webp",
+    image: "/avila.webp",
     imageAlt: "Description of image",
     slug: "post-2",
   },
